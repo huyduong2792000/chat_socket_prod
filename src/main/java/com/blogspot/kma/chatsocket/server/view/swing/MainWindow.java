@@ -69,11 +69,11 @@ class MainWindow extends AbstractSwingWindow implements ActionListener, MainView
         btnShowIPs.addActionListener(this);
         panel.add(btnShowIPs);
 
-        JLabel lblCopyrightBySontx = new JLabel("Copyright by sontx, www.sontx.blogspot.com");
-        lblCopyrightBySontx.setHorizontalAlignment(SwingConstants.RIGHT);
-        lblCopyrightBySontx.setForeground(Color.GRAY);
-        lblCopyrightBySontx.setBounds(0, 321, 185, 14);
-        getContentPane().add(lblCopyrightBySontx);
+        JLabel lblCopyrightBy = new JLabel("Copyright by team dev kma at15c");
+        lblCopyrightBy.setHorizontalAlignment(SwingConstants.RIGHT);
+        lblCopyrightBy.setForeground(Color.GRAY);
+        lblCopyrightBy.setBounds(0, 321, 185, 14);
+        getContentPane().add(lblCopyrightBy);
 
         JPanel panel_1 = new JPanel();
         panel_1.setBounds(208, 149, 297, 153);

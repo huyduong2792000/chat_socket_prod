@@ -55,7 +55,7 @@ class ConnectionWindow extends AbstractSwingWindow implements ConnectionView, Ac
         bannerField.setIcon(new ImageIcon(ImagesResource.getInstance().getImageByName("connection-banner.png")));
         getContentPane().add(bannerField);
 
-        JLabel copyrightField = new JLabel("Copyright by sontx, www.sontx.in");
+        JLabel copyrightField = new JLabel("Copyright by team dev kma at15c");
         copyrightField.setForeground(Color.GRAY);
         copyrightField.setBounds(0, 343, 300, 14);
         getContentPane().add(copyrightField);

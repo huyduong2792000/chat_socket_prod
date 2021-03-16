@@ -79,6 +79,7 @@ public class AppServerImpl extends Component implements AppServer {
 
     @Subscribe
     public void onStartServer(StartServerEvent event) {
+        System.out.println("onStartServer");
         StreamUtils.tryCloseStream(server);
         try {
             startServer(event.getIp(), event.getPort());
@@ -89,6 +90,7 @@ public class AppServerImpl extends Component implements AppServer {
     }
 
     private void startServer(String listenOnIp, int port) throws IOException {
+        System.out.println("startServer");
         server = new SocketServer(port, listenOnIp, 100).build(getPlatform());
         server.start();
 

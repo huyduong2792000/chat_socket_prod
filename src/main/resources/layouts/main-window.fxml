@@ -28,7 +28,7 @@
             <TextArea fx:id="logTextArea" editable="false" BorderPane.alignment="CENTER" />
          </center>
          <bottom>
-            <Label alignment="CENTER" text="Copyright by sontx, www.code4bugs.com" textFill="#a8a8a8" BorderPane.alignment="CENTER_RIGHT">
+            <Label alignment="CENTER" text="Copyright by kma" textFill="#a8a8a8" BorderPane.alignment="CENTER_RIGHT">
                <BorderPane.margin>
                   <Insets top="10.0" />
                </BorderPane.margin></Label>

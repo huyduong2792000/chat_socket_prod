@@ -31,6 +31,7 @@ class MainWindow extends AbstractJavaFxWindow implements MainView, LogView {
 
     @FXML
     private void onStartClick() {
+        System.out.println("2) onStartClick");
         if (startButtonListener != null)
             startButtonListener.run();
     }

@@ -39,6 +39,7 @@ class Bootstrap {
 
     void boot(String[] args) {
         CommandLine commandLine = parseArgs(args);
+        System.out.println("commandLine" + commandLine);
         if (commandLine == null || commandLine.hasOption("h")) {
             showHelp();
         } else if (commandLine.hasOption("m")) {

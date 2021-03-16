@@ -69,6 +69,7 @@ public class SocketClient extends BackgroundService implements Client {
     private void waitForIncommingMessages() throws Exception {
         while (!closing) {
             Object receivedMessage = transmission.receiveObject();
+            System.out.println("------receivedMessage-----" + receivedMessage);
             if (receivedMessage instanceof Response) {
                 handleResponse((Response) receivedMessage);
             }

@@ -95,7 +95,7 @@ public class AppClientImpl extends Component implements AppClient {
 
     @Subscribe
     public void onOpenChat(OpenChatEvent event) {
-        runOnUiThread(() -> startPresenter(new ChatPresenter(create(ChatView.class), event.getChatWith())), false);
+        runOnUiThread(() -> startPresenter(new ChatPresenter(create(ChatView.class), event.getChatWith())), true);
     }
 
     @Subscribe

@@ -90,7 +90,7 @@ public class FriendListPresenter extends AbstractPresenter<FriendListView> {
             if (friendList == null)
                 friendList = new ArrayList<>();
 
-            if (friendList.stream().anyMatch(friend -> friend.getId() == newFriendInfo.getId())) {
+            if (friendList.stream().anyMatch(friend -> friend.getId().equals(newFriendInfo.getId()))) {
                 view.updateFriend(newFriendInfo);
             } else {
                 friendList.add(newFriendInfo);

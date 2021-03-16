@@ -1,6 +1,6 @@
 package com.blogspot.sontx.chatsocket.lib.thread;
 
-import com.sun.javafx.application.PlatformImpl;
+    import com.sun.javafx.application.PlatformImpl;
 import javafx.application.Platform;
 import lombok.extern.log4j.Log4j;
 

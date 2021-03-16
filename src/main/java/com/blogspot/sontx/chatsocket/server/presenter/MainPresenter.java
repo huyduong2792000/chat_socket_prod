@@ -23,7 +23,8 @@ public class MainPresenter extends AbstractPresenter<MainView> {
     }
 
     @Override
-    protected  void wireUpViewEvents() {
+    protected void wireUpViewEvents() {
+        System.out.println("1) wireUpViewEvents");
         super.wireUpViewEvents();
         view.setStartButtonListener(() -> {
             if (serverIsRunning)
@@ -45,6 +46,7 @@ public class MainPresenter extends AbstractPresenter<MainView> {
     }
 
     private void startServer() {
+        System.out.println("3) startServer");
         if (verifyInputs()) {
             String ip = view.getIp();
             int port = Integer.parseInt(view.getPort());

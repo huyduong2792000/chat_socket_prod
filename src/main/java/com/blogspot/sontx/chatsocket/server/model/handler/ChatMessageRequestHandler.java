@@ -6,7 +6,6 @@ import com.blogspot.sontx.chatsocket.server.event.RequestReceivedEvent;
 
 /**
  * Handles sending chat message request from the client, the chat message
- * will be forwarded to a corresponding {@link com.blogspot.sontx.chatsocket.server.model.Worker}.
  */
 class ChatMessageRequestHandler extends AbstractRequestHandler {
     @Override
